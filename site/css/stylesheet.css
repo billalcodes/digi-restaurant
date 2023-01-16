@@ -1,0 +1,43 @@
+/*body{
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(174, 34, 34);
+    font-family: 'Oxygen', sans-serif;
+}
+#header-nav{
+    background-color: rgb(255, 255, 255);
+    border-radius: 0;
+    border: 0;
+    height: 200px;
+}
+#brand{/*brand name
+    text-decoration: none;
+    color: rgb(174, 34, 34) ;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+}
+.navbar-brand{ /*brand logo
+    position: relative;
+    background: url(../images/logo.jpg);
+    left: 1rem;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar-nav{
+    margin-right: 0.5rem; ;
+}
+.navbar-nav a{
+  
+    color:  rgb(174, 34, 34);
+    font-size: 3.5rem;
+    
+  
+}
+.navbar-toggler{
+    float: right;
+}
+*/
