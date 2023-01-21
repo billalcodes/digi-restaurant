@@ -113,12 +113,3 @@ body{
 .slider-nav a:hover{
     opacity: 1;
 }
-.timer {
-    height: 1%;
-    width: 0%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: #09f;
-    z-index: 10;
-  }
