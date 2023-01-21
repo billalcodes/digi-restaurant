@@ -79,6 +79,7 @@ body{
     position: relative;
     max-width: 100%;
     margin: 0 auto;
+    
 }
 .slider{
     display: flex;
@@ -87,11 +88,18 @@ body{
     scroll-snap-type: x mandatory;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 100%, 0.25);
     border-radius: 0.5rem;
+  
 }
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.slider img:cli{
+    animation-play-state: paused;
 }
 .slider-nav{
     display: flex;
@@ -112,4 +120,12 @@ body{
 }
 .slider-nav a:hover{
     opacity: 1;
+}
+@keyframes slide{
+    30%{
+        transform: translateX(-100%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
 }
