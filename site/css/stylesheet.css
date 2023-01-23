@@ -93,12 +93,13 @@ body{
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: cover;
+    width: auto;
+    height: auto;
     animation-name: slide;
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
-.slider img:cli{
+.slider img:click{
     animation-play-state: paused;
 }
 .slider-nav{
@@ -132,5 +133,9 @@ body{
 @media (min-width:992px){
     .slider{
         aspect-ratio: 25/9;
+    }
+    .slider img{
+        flex: 1 0 100%;
+        object-fit: cover;
     }
 }
