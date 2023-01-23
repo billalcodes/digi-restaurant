@@ -83,7 +83,7 @@ body{
 }
 .slider{
     display: flex;
-    aspect-ratio: 25/9;
+    aspect-ratio: 3/1;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 100%, 0.25);
@@ -127,5 +127,10 @@ body{
     }
     60% {
         transform: translateX(-200%);
+    }
+}
+@media (min-width:992px){
+    .slider{
+        aspect-ratio: 25/9;
     }
 }
