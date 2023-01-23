@@ -83,7 +83,7 @@ body{
 }
 .slider{
     display: flex;
-    aspect-ratio: 3/1;
+    aspect-ratio: 25/9;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 100%, 0.25);
@@ -93,9 +93,7 @@ body{
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
-    aspect-ratio: 25/9;
     background-image: url("../images/1small.jpg"), url("../images/2small.jpg"), url("../images/3small.jpg");
-    object-fit: cover;
     animation-name: slide;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -133,6 +131,7 @@ body{
 }
 @media (min-width:992px){
     .slider img{
+        object-fit: cover;
         
         background-image: url("../images/1.jpg"), url("../images/2.jpg"), url("../images/3.jpg");
     }
