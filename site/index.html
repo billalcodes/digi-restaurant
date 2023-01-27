@@ -12,45 +12,72 @@
     <link rel="images" href="images">
    </head>
    <body>
-      <!--top navigation bar-->
-      <header>
-         <nav id="nav" class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-               <a class="navbar-brand mb-0 h1" href="#">Lorem ipsum</a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ms-auto">
-                     <li class="nav-item active">
-                        <a class="nav-link"href="#"><span>Home</span></a>
-                     </li>
-                     <li class="nav-item active">
-                        <a class="nav-link"href="#"><span>Menu</span></a>
-                     </li>
-                     <li class="nav-item active">
-                        <a class="nav-link" href="#"><span>About</span></a>
-                     </li>
-                  </ul>  
+      <div class="home">
+         <!--top navigation bar-->
+         <header>
+            <nav id="nav" class="navbar navbar-expand-lg">
+               <div class="container-fluid">
+                  <a class="navbar-brand mb-0 h1" href="#">Lorem ipsum</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                           <a class="nav-link"href="#"><span>Home</span></a>
+                        </li>
+                        <li class="nav-item active">
+                           <a class="nav-link"href="#"><span>Menu</span></a>
+                        </li>
+                        <li class="nav-item active">
+                           <a class="nav-link" href="#"><span>About</span></a>
+                        </li>
+                     </ul>  
+                  </div>
+               </div>
+            </nav>
+         </header>
+         <!--main content of the website-->
+         <section class="container">
+
+            <div class="slider-wrapper">
+               <div class="slider">
+                  <img src="images/1.jpg" id="slide-1">
+                  <img src="images/2.jpg" id="slide-2">
+                  <img src="images/3.jpg" id="slide-3">
+               </div>
+               <div class="slider-nav">
+                  <a href="#slide-1"></a>
+                  <a href="#slide-2"></a>
+                  <a href="#slide-3"></a>
                </div>
             </div>
-         </nav>
-      </header>
-      <!--main content of the website-->
-      <section class="container">
-
-         <div class="slider-wrapper">
-            <div class="slider">
-               <img src="images/1.jpg" id="slide-1">
-               <img src="images/2.jpg" id="slide-2">
-               <img src="images/3.jpg" id="slide-3">
+         </section>
+         <div class="row" id="home-tiles">
+            <div class="col-md-4">
+               <a href="menu-categories.html">
+                  <div id="menu-tile">
+                     <span>Menu</span>
+                  </div>
+               </a>
             </div>
-            <div class="slider-nav">
-               <a href="#slide-1"></a>
-               <a href="#slide-2"></a>
-               <a href="#slide-3"></a>
+            <div class="col-md-4">
+               <a href="single-category.html">
+                  <div id="specials-tile">
+                     <span>Specials</span>
+                  </div>
+               </a>
+            </div>
+            <div class="col-md-4">
+               <a href="" target="_blank">
+                  <div id="map-tile">
+                     <span>
+                        Map
+                     </span>
+                  </div>
+               </a>
             </div>
          </div>
-      </section>
+         </div>
    </body>
 </html>
