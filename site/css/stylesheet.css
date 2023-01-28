@@ -177,6 +177,11 @@ body{
     color: #fff;
     opacity: 0.8;
 }
+@media (max-width: 570px){
+    #menu-tile, #specials-tile, #map-tile{
+        height: 150px;
+    }
+}
 /*Home page end*/
 
 
