@@ -97,7 +97,7 @@ body{
     aspect-ratio: 25/9;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 100%, 0.25);
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 100%, 0.25); 
     border-radius: 0.5rem;
   
 }
@@ -106,6 +106,7 @@ body{
     scroll-snap-align: start;
     background-image: url("../images/1small.jpg"), url("../images/2small.jpg"), url("../images/3small.jpg");
     animation-name: slide;
+    object-fit: cover;
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
@@ -124,7 +125,7 @@ body{
 .slider-nav a{
     width: 0.5rem;
     height: 0.5rem;
-    border-radius: 50%;
+    border-radius: 50%; 
     background-color: #fff;
     opacity: 0.75;
     transition: opacity ease 250rem;
@@ -149,10 +150,33 @@ body{
     width: 100%;
     margin-bottom: 15px;
     position: relative;
+    border-radius: 1rem;
     border: 2px solid white;
     overflow: hidden;
 }
-
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+    box-shadow:0 1px 5px 1px #cccccc
+}
+#menu-tile{
+    background-image: url("../images/menu-tile.jpg");
+    background-position: center;
+}
+#specials-tile{
+    background-image: url("../images/specials-tile.jpg");
+    background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+}
 /*Home page end*/
 
 
