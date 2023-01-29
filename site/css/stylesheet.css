@@ -1,11 +1,15 @@
 *{
     box-sizing: border-box;
 }
+@font-face{
+  
+    font-family: 'passion-one-normal';
+    src: url('../fonts/PassionOne-Regular.ttf');
+}
 body{
-   
     color: #ffffff;
     background-color: rgb(0, 0, 0);
-    font-family: 'Oxygen', sans-serif;
+    font-family: passion-one-normal, sans-serif;
     font-weight: bold;
 }
 
@@ -13,9 +17,10 @@ body{
   
     background-color: black;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 
 }
+
 .home{
     margin: 0;
     padding-right: 2%;
@@ -25,6 +30,8 @@ body{
 .navbar-brand{ /*brand name*/
     font-weight: bold;
     color: white;
+    letter-spacing: 3px;
+    font-size: 2rem;
 }
 @media (min-width:992px) { /*brand name larger view*/
     .home{
@@ -49,6 +56,8 @@ body{
 .navbar-nav a{
     
     color: white;
+    letter-spacing: 3px;
+    font-size: 1rem;
 }
 .navbar-nav a:hover {
     background-color: rgb(106, 43, 43);
@@ -143,45 +152,217 @@ body{
 /*Tiles*/
 #home-tiles{
    padding-right: 12px; 
-   padding-left: 12px;
+   padding-left: 12px;   
 }
-#menu-tile, #specials-tile, #map-tile{
-    height: 250px;
+#menu-tile, #map-tile{
+    height: 175px;
     width: 100%;
-    margin-bottom: 15px;
     position: relative;
-    border-radius: 1rem;
-    border: 2px solid white;
+    border-radius: 0.5rem;
     overflow: hidden;
+    margin-bottom: 25px;
 }
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+#map-tile{
+    height: 250px;
+}
+#menu-tile:hover, #map-tile:hover{
     box-shadow:0 1px 5px 1px #cccccc
 }
 #menu-tile{
-    background-image: url("../images/menu-tile.jpg");
+  
     background-position: center;
 }
-#specials-tile{
-    background-image: url("../images/specials-tile.jpg");
-    background-position: center;
+.cat1{
+    background-image: url("../images/burgers.jpg");
 }
-#menu-tile span, #specials-tile span, #map-tile span{
+.cat2{
+    background-image: url("../images/indian.jpg");
+}
+.cat3{
+    background-image: url("../images/chinese.jpg");
+}
+.cat4{
+    background-image: url("../images/salad.jpg");
+}
+.cat5{
+    background-image: url("../images/desserts.jpg");
+}
+.cat6{
+    background-image: url("../images/beverages.jpg");
+}
+
+#menu-tile span, #map-tile span{
     position: absolute;
     bottom: 0;
     right: 0;
     width: 100%;
+    font-family: passion-one-normal, sans-serif;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
     background-color: #000;
     color: #fff;
     opacity: 0.8;
 }
+@font-face{
+    font-family: 'passion-one-bold';
+    src: url('../fonts/PassionOne-Bold.ttf');
+}
+.categories-head h1{
+    text-align: center;
+    color: #fff;
+    font-family: passion-one-bold, sans-serif;
+    /* font-weight: 300; */
+    padding-bottom: 25px;
+    position: relative;
+}
+.categories-head h1::before{
+    content: "";
+    display: block;
+    width: 34%;
+    height: 2px;
+    background: rgb(253, 29, 29);
+    position: absolute;
+    left:0;
+    top: 30%;
+}
+.categories-head h1::after{
+    content: "";
+    display: block;
+    width: 34%;
+    height: 2px;
+    background: rgb(253, 29, 29);
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+.location-head h1{
+    text-align: center;
+    color: #fff;
+    font-family: passion-one-bold, sans-serif;
+    /* font-weight: 300; */
+    padding-bottom: 25px;
+    position: relative;
+}
+.location-head h1::before{
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background: rgb(253, 29, 29);
+    position: absolute;
+    left: 12px;
+    top: 30%;
+}
+.location-head h1::after{
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background: rgb(253, 29, 29);
+    position: absolute;
+    right: 12px;
+    top: 30%;
+}
 @media (max-width: 570px){
-    #menu-tile, #specials-tile, #map-tile{
+    
+    .row{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 35%;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+    }
+  
+    #map-tile{
         height: 150px;
     }
+
+    #menu-tile{
+        height: 100px;
+    }
+
+    .cat1{
+        background-image: url("../images/burgers-xs.jpg");
+    }
+    .cat2{
+        background-image: url("../images/indian-xs.jpg");
+    }
+    .cat3{
+        background-image: url("../images/chinese-xs.jpg");
+    }
+    .cat4{
+        background-image: url("../images/salad-xs.jpg");
+    }
+    .cat5{
+        background-image: url("../images/desserts-xs.jpg");
+    }
+    .cat6{
+        background-image: url("../images/beverages-xs.jpg");
+    }
+
+    .categories-head h1{
+        text-align: center;
+        color: #fff;
+        font-family: passion-one-bold, sans-serif;
+        /* font-weight: 300; */
+        padding-bottom: 25px;
+        position: relative;
+        font-size: 1.5rem;
+    }
+    .categories-head h1::before{
+        content: "";
+        display: block;
+        width: 24%;
+        height: 2px;
+        background: rgb(253, 29, 29);
+        position: absolute;
+        left:12px;
+        top: 30%;
+    }
+    .categories-head h1::after{
+        content: "";
+        display: block;
+        width: 24%;
+        height: 2px;
+        background: rgb(253, 29, 29);
+        position: absolute;
+        right: 12px;
+        top: 30%;
+    }
+    .location-head h1{
+        text-align: center;
+        color: #fff;
+        font-family: passion-one-bold, sans-serif;
+        /* font-weight: 300; */
+        padding-bottom: 25px;
+        position: relative;
+        font-size: 1.5rem;
+    }
+    .location-head h1::before{
+        content: "";
+        display: block;
+        width: 34%;
+        height: 2px;
+        background: rgb(253, 29, 29);
+        position: absolute;
+        left: 12px;
+        top: 30%;
+    }
+    .location-head h1::after{
+        content: "";
+        display: block;
+        width: 34%;
+        height: 2px;
+        background: rgb(253, 29, 29);
+        position: absolute;
+        right: 12px;
+        top: 30%;
+    }
+    
 }
+
 /*Home page end*/
 
 
