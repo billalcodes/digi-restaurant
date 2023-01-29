@@ -319,7 +319,7 @@ body{
         background: rgb(253, 29, 29);
         position: absolute;
         left:12px;
-        top: 30%;
+        top: 25%;
     }
     .categories-head h1::after{
         content: "";
@@ -329,7 +329,7 @@ body{
         background: rgb(253, 29, 29);
         position: absolute;
         right: 12px;
-        top: 30%;
+        top: 25%;
     }
     .location-head h1{
         text-align: center;
@@ -348,7 +348,7 @@ body{
         background: rgb(253, 29, 29);
         position: absolute;
         left: 12px;
-        top: 30%;
+        top: 25%;
     }
     .location-head h1::after{
         content: "";
@@ -358,7 +358,7 @@ body{
         background: rgb(253, 29, 29);
         position: absolute;
         right: 12px;
-        top: 30%;
+        top: 25%;
     }
     
 }
