@@ -265,6 +265,37 @@ body{
     right: 12px;
     top: 30%;
 }
+/* Footer */
+.panel-footer{
+    background-color: rgb(253, 29, 29, 0.75);
+    color: #fff;
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    border-top: 0;
+    font-family:'Times New Roman', Times, serif;
+    width: 100%;
+}
+.panel-footer div.row{
+    margin-bottom: 35px;
+}
+#hours, #address{
+    line-height: 2;
+}
+#hours>span , #address>span{
+    font-size: 1.3rem;
+}
+#address p{
+    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+#testimonials{
+    font-style: italic;
+}
+#testimonials p:nth-child(2){
+    margin-top: 25px;
+} 
 @media (max-width: 570px){
     
     .row{
@@ -360,7 +391,9 @@ body{
         right: 12px;
         top: 25%;
     }
-    
+    .panel-footer{
+        display: block;
+    }
 }
 
 /*Home page end*/
