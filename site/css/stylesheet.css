@@ -164,6 +164,8 @@ body{
 }
 #map-tile{
     height: 250px;
+    margin-right: 12px;
+    margin-right: 100px;
 }
 #menu-tile:hover, #map-tile:hover{
     box-shadow:0 1px 5px 1px #cccccc
@@ -224,7 +226,7 @@ body{
     height: 2px;
     background: rgb(253, 29, 29);
     position: absolute;
-    left:0;
+    left:12px;
     top: 30%;
 }
 .categories-head h1::after{
@@ -234,7 +236,7 @@ body{
     height: 2px;
     background: rgb(253, 29, 29);
     position: absolute;
-    right: 0;
+    right: 12px;
     top: 30%;
 }
 .location-head h1{
@@ -296,11 +298,19 @@ body{
 #testimonials p:nth-child(2){
     margin-top: 25px;
 } 
+#testimonials img{
+    background-color: transparent;
+}
 /* medium to large devices / tabs */
 @media (min-width: 769px) and (max-width: 1200px){
     #menu-tile{
         height: 135px;
     }
+    #menu-categories-tiles{
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    
 }
 /* small devices */
 @media (min-width: 570px) and (max-width: 769px){
@@ -416,7 +426,7 @@ body{
         text-align: center;
         color: #fff;
         font-family: passion-one-bold, sans-serif;
-        /* font-weight: 300; */
+        font-weight: 300;
         padding-bottom: 25px;
         position: relative;
         font-size: 1.5rem;
@@ -492,4 +502,26 @@ body{
 
 /*Home page end*/
 
+/* Menu cetegories page start */
+#menu-categories-title::before{
+    content: "";
+    display: block;
+    width: 37%;
+    height: 2px;
+    background: rgb(253, 29, 29);
+    position: absolute;
+    left: 12px;
+    top: 25%;
+}
+#menu-categories-title::after{
+    content: "";
+    display: block;
+    width: 37%;
+    height: 2px;
+    background: rgb(253, 29, 29);
+    position: absolute;
+    right: 12px;
+    top: 25%;
+}
 
+/* Menu categories page end */
