@@ -301,6 +301,35 @@ body{
 #testimonials img{
     background-color: transparent;
 }
+/* Menu categories page start */
+#menu-cat-tile{
+    height: 250px;
+    width: 100%;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 25px;
+    background-position: center;
+}
+#menu-cat-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    font-family: passion-one-normal, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+}
+#menu-cat-tile:hover{
+    box-shadow:0 1px 5px 1px #cccccc
+
+}
+/* Menu categories page end */
 /* medium to large devices / tabs */
 @media (min-width: 769px) and (max-width: 1200px){
     #menu-tile{
@@ -382,8 +411,42 @@ body{
         right: 12px;
         top: 25%;
     }
+    /* Menu categories page start */
+    #menu-categories-tiles{
+        display: flex !important;
+    }
+    #menu-cat-tile{
+        
+        height: 170px;
+        width: 100%;
+        position: relative;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        margin-bottom: 25px;
+        background-position: center;
+    }
+    #menu-cat-tile span{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        font-family: passion-one-normal, sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: #000;
+        color: #fff;
+        opacity: 0.8;
+    }
+    #menu-cat-tile:hover{
+        box-shadow:0 1px 5px 1px #cccccc
+
+    }
+    /* Menu categories page end */
 
 }
+
 /* Extra small devuces only */
 @media (max-width: 570px){
     
