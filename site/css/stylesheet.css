@@ -20,7 +20,9 @@ body{
     padding-bottom: 25px;
 
 }
-
+.container-fluid{
+    padding-right: 2px;
+}
 .home{
     margin: 0;
     padding-right: 2%;
@@ -89,12 +91,7 @@ body{
 }
 
 /*Home page*/
-.container{
-    position: relative;
-    margin: 0px auto;
-    max-width: inherit;
-    padding-bottom: 25px;
-}
+
 .slider-wrapper{
     position: relative;
     max-width: 100%;
@@ -168,7 +165,7 @@ body{
     margin-right: 100px;
 }
 #menu-tile:hover, #map-tile:hover{
-    box-shadow:0 1px 5px 1px #cccccc
+    box-shadow:0 1px 5px 1px #cccccc;
 }
 #menu-tile{
   
@@ -210,6 +207,9 @@ body{
 @font-face{
     font-family: 'passion-one-bold';
     src: url('../fonts/PassionOne-Bold.ttf');
+}
+.categories-head{
+    padding-top: 25px;
 }
 .categories-head h1{
     text-align: center;
@@ -302,7 +302,7 @@ body{
     background-color: transparent;
 }
 /* Menu categories page start */
-#menu-cat-tile{
+/* #menu-cat-tile{
     height: 250px;
     width: 100%;
     position: relative;
@@ -328,22 +328,22 @@ body{
 #menu-cat-tile:hover{
     box-shadow:0 1px 5px 1px #cccccc
 
-}
+} */
 /* Menu categories page end */
 /* medium to large devices / tabs */
 @media (min-width: 769px) and (max-width: 1200px){
     #menu-tile{
         height: 135px;
     }
-    #menu-categories-tiles{
+    /* #menu-categories-tiles{
         padding-right: 12px;
         padding-left: 12px;
     }
-    
+     */
 }
 /* small devices */
-@media (min-width: 570px) and (max-width: 769px){
-    .row{
+@media (min-width: 576px) and (max-width: 769px){
+    #main-pg .row{
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: 23%;
@@ -411,57 +411,22 @@ body{
         right: 12px;
         top: 25%;
     }
-    /* Menu categories page start */
-    #menu-categories-tiles{
-        display: flex !important;
-    }
-    #menu-cat-tile{
-        
-        height: 170px;
-        width: 100%;
-        position: relative;
-        border-radius: 0.5rem;
-        overflow: hidden;
-        margin-bottom: 25px;
-        background-position: center;
-    }
-    #menu-cat-tile span{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        font-family: passion-one-normal, sans-serif;
-        text-align: center;
-        font-size: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        background-color: #000;
-        color: #fff;
-        opacity: 0.8;
-    }
-    #menu-cat-tile:hover{
-        box-shadow:0 1px 5px 1px #cccccc
+      /* categories page */
+    
 
-    }
-    /* Menu categories page end */
 
 }
 
-/* Extra small devuces only */
-@media (max-width: 570px){
+/* Extra small devices only */
+@media (max-width: 576px){
     
-    .row{
+    #main-pg .row{
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: 32%;
         overflow-x: auto;
         overscroll-behavior-inline: contain;
     }
-  
-    #map-tile{
-        height: 150px;
-    }
-
     #menu-tile{
         height: 100px;
     }
@@ -560,16 +525,33 @@ body{
         right: 25%;
 
     }
+    .category-tile{
+        position: relative;
+        border: 2px;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        width: 100px;
+        height: 200px; 
+        margin: 0 auto 25px;
+     
+    }
+  
 }
 
 
 /*Home page end*/
 
 /* Menu cetegories page start */
+.container{
+    position: relative;
+    margin: 0px auto;
+    max-width: inherit;
+    padding-bottom: 25px;
+}
 #menu-categories-title::before{
     content: "";
     display: block;
-    width: 37%;
+    width: 35%;
     height: 2px;
     background: rgb(253, 29, 29);
     position: absolute;
@@ -579,7 +561,7 @@ body{
 #menu-categories-title::after{
     content: "";
     display: block;
-    width: 37%;
+    width: 35%;
     height: 2px;
     background: rgb(253, 29, 29);
     position: absolute;
@@ -587,4 +569,67 @@ body{
     top: 25%;
 }
 
+    /* #menu-categories-tiles{
+        display: flex !important;
+    }
+    #menu-cat-tile{
+        
+        height: 170px;
+        width: 100%;
+        position: relative;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        margin-bottom: 25px;
+        background-position: center;
+    }
+    #menu-cat-tile span{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        font-family: passion-one-normal, sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: #000;
+        color: #fff;
+        opacity: 0.8;
+    }
+    #menu-cat-tile:hover{
+        box-shadow:0 1px 5px 1px #cccccc
+
+    } */
+    .category-tile{
+        position: relative;
+        border: 2px;
+        border-radius: 0.5rem;
+        overflow: hidden;
+       
+        height: 200px; 
+        margin: 0 auto 25px;
+        max-width: 100%;
+    }
+    .category-tile:hover{
+        box-shadow:0 1px 5px 1px #cccccc;
+
+    }
+    #categories-page-tiles.row{
+        padding-left: 12px;
+        padding-right: 12px;
+        
+    }
+    .category-tile span{
+        position:absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background-color: #000;
+        color: #fff;
+        opacity: .8;
+    }
 /* Menu categories page end */
