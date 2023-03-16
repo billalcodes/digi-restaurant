@@ -171,7 +171,7 @@ body{
   
     background-position: center;
 }
-.cat1{
+/* .cat1{
     background-image: url("../images/burgers.jpg");
 }
 .cat2{
@@ -188,8 +188,11 @@ body{
 }
 .cat6{
     background-image: url("../images/beverages.jpg");
+} */
+.main-pg-cat-tiles img{
+    width: 100%;
+    height: auto;
 }
-
 #menu-tile span, #map-tile span{
     position: absolute;
     bottom: 0;
@@ -212,17 +215,19 @@ body{
     padding-top: 25px;
 }
 .categories-head hr{
-
+    border: none;
+    height: 3px;
+    background-color: rgb(253, 29, 29);
+    opacity: 1;
 }
 .categories-head h1{
     text-align: center;
     color: #fff;
     font-family: passion-one-bold, sans-serif;
-    /* font-weight: 300; */
-    padding-bottom: 25px;
+   
     position: relative;
 }
-.categories-head h1::before{
+/* .categories-head h1::before{
     content: "";
     display: block;
     width: 34%;
@@ -241,35 +246,22 @@ body{
     position: absolute;
     right: 12px;
     top: 30%;
-}
+} */
 .location-head h1{
     text-align: center;
     color: #fff;
     font-family: passion-one-bold, sans-serif;
-    /* font-weight: 300; */
-    padding-bottom: 25px;
+   
+  
     position: relative;
 }
-.location-head h1::before{
-    content: "";
-    display: block;
-    width: 40%;
-    height: 2px;
-    background: rgb(253, 29, 29);
-    position: absolute;
-    left: 12px;
-    top: 30%;
+.location-head hr{
+    border: none;
+    height: 3px;
+    background-color: rgb(253, 29, 29);
+    opacity: 1;
 }
-.location-head h1::after{
-    content: "";
-    display: block;
-    width: 40%;
-    height: 2px;
-    background: rgb(253, 29, 29);
-    position: absolute;
-    right: 12px;
-    top: 30%;
-}
+
 /* Footer */
 .panel-footer{
     background-color: rgb(253, 29, 29, 0.75);
@@ -360,60 +352,18 @@ body{
         text-align: center;
         color: #fff;
         font-family: passion-one-bold, sans-serif;
-        /* font-weight: 300; */
-        padding-bottom: 25px;
         position: relative;
         font-size: 1.5rem;
     }
-    .categories-head h1::before{
-        content: "";
-        display: block;
-        width: 33%;
-        height: 2px;
-        background: rgb(253, 29, 29);
-        position: absolute;
-        left:12px;
-        top: 25%;
-    }
-    .categories-head h1::after{
-        content: "";
-        display: block;
-        width: 33%;
-        height: 2px;
-        background: rgb(253, 29, 29);
-        position: absolute;
-        right: 12px;
-        top: 25%;
-    }
+    
     .location-head h1{
         text-align: center;
         color: #fff;
         font-family: passion-one-bold, sans-serif;
-        /* font-weight: 300; */
-        padding-bottom: 25px;
         position: relative;
         font-size: 1.5rem;
     }
-    .location-head h1::before{
-        content: "";
-        display: block;
-        width: 36%;
-        height: 2px;
-        background: rgb(253, 29, 29);
-        position: absolute;
-        left: 12px;
-        top: 25%;
-    }
-    .location-head h1::after{
-        content: "";
-        display: block;
-        width: 36%;
-        height: 2px;
-        background: rgb(253, 29, 29);
-        position: absolute;
-        right: 12px;
-        top: 25%;
-    }
+ 
       /* categories page */
     
 
@@ -457,60 +407,18 @@ body{
         text-align: center;
         color: #fff;
         font-family: passion-one-bold, sans-serif;
-        font-weight: 300;
-        padding-bottom: 25px;
         position: relative;
         font-size: 1.5rem;
     }
-    .categories-head h1::before{
-        content: "";
-        display: block;
-        width: 24%;
-        height: 2px;
-        background: rgb(253, 29, 29);
-        position: absolute;
-        left:12px;
-        top: 25%;
-    }
-    .categories-head h1::after{
-        content: "";
-        display: block;
-        width: 24%;
-        height: 2px;
-        background: rgb(253, 29, 29);
-        position: absolute;
-        right: 12px;
-        top: 25%;
-    }
+  
     .location-head h1{
         text-align: center;
         color: #fff;
         font-family: passion-one-bold, sans-serif;
-        /* font-weight: 300; */
-        padding-bottom: 25px;
         position: relative;
         font-size: 1.5rem;
     }
-    .location-head h1::before{
-        content: "";
-        display: block;
-        width: 34%;
-        height: 2px;
-        background: rgb(253, 29, 29);
-        position: absolute;
-        left: 12px;
-        top: 25%;
-    }
-    .location-head h1::after{
-        content: "";
-        display: block;
-        width: 34%;
-        height: 2px;
-        background: rgb(253, 29, 29);
-        position: absolute;
-        right: 12px;
-        top: 25%;
-    }
+    
     .panel-footer .row{
         display: block;
     }
