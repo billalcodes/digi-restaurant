@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Foods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="java" href="js/java.js">
+    <link rel="images" href="images">
+   </head>
+   <body>
+      <div class="home" id="main-pg">
+         <!--top navigation bar-->
+         <header>
+            <nav id="nav" class="navbar navbar-expand-lg">
+               <div class="container-fluid">
+                  <a class="navbar-brand mb-0 h1" href="#">Lorem ipsum</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                           <a class="nav-link"href="index.html"><span>Home</span></a>
+                        </li>
+                        <li class="nav-item active">
+                           <a class="nav-link"href="menu-categories.html"><span>Menu</span></a>
+                        </li>
+                        <li class="nav-item active">
+                           <a class="nav-link" href="#"><span>About</span></a>
+                        </li>
+                     </ul>  
+                  </div>
+               </div>
+            </nav>
+         </header>
+         <!-- top nav bar end -->
+         <!--main content of the website-->
+         <section class="main-pg-slider">
+
+            <div class="slider-wrapper col-md-12 col-sm-12 col-xs-12">
+               <div class="slider">
+                  <img src="images/1.jpg" id="slide-1">
+                  <img src="images/2.jpg" id="slide-2">
+                  <img src="images/3.jpg" id="slide-3">
+               </div>
+               <div class="slider-nav">
+                  <a href="#slide-1"></a>
+                  <a href="#slide-2"></a>
+                  <a href="#slide-3"></a>
+               </div>
+            </div>
+         </section> 
+         <div class="categories-head">
+            <hr>
+            <h1>Menu Categories</h1>
+            <hr>
+         </div>
+         <div class="row" id="home-tiles">
+            
+            <div class="col-md-2">
+               <a href="menu-categories.html">
+                  <div class="main-pg-cat-tiles" id="menu-tile">
+                     <img  src="images/burgers.jpg"  alt="category1">
+                     <span>Burgers</span>
+                  </div>
+               </a>
+            </div>
+            <div class="col-md-2">
+               <a href="menu-categories.html">
+                  <div class="main-pg-cat-tiles" id="menu-tile">
+                     <img  src="images/indian.jpg"  alt="category1">
+                     <span>Indian</span>
+                  </div>
+               </a>
+            </div>
+            <div class="col-md-2">
+               <a href="menu-categories.html">
+                  <div class="main-pg-cat-tiles" id="menu-tile">
+                     <img  src="images/chinese.jpg"  alt="category1">
+                     <span>Chinese</span>
+                  </div>
+               </a>
+            </div>
+            <div class="col-md-2">
+               <a href="menu-categories.html">
+                  <div class="main-pg-cat-tiles" id="menu-tile">
+                     <img  src="images/salad.jpg"  alt="category1">
+                     <span>Salad</span>
+                  </div>
+               </a>
+            </div>
+            <div class="col-md-2">
+               <a href="menu-categories.html">
+                  <div class="main-pg-cat-tiles" id="menu-tile">
+                     <img  src="images/desserts.jpg"  alt="category1">
+                     <span>Desserts</span>
+                  </div>
+               </a>
+            </div>
+            <div class="col-md-2">
+               <a href="menu-categories.html">
+                  <div class="main-pg-cat-tiles" id="menu-tile">
+                     <img  src="images/beverages.jpg"  alt="category1">
+                     <span>Beverages</span>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="location-head">
+            <hr>
+            <h1>Location</h1>
+            <hr>
+         </div>
+         <div class="col-md-12 col-sm-12 col-xs-12">
+            <a href="https://goo.gl/maps/xQTiYnsU3hS8sqt38" target="_blank">
+               <div id="map-tile">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d106313.86873558433!2d73.0529792!3d33.623244799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1674904069429!5m2!1sen!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+            </a>
+         </div>
+         <!--main content of the website end-->
+      </div>
+      <!-- footer start -->
+      <footer class="panel-footer">
+         <div class="container">
+            <div class="row">
+               <section id="hours" class="col-sm-4 col-xs-12">
+                  <span>Hours:</span><br>
+                  Sun-Thurs: 11:00am - 10:00pm<br>
+                  Fri: 11:00am - 2:30pm<br>
+                  Saturday Closed
+                  <hr class="d-block d-sm-none">
+               </section>
+               <section id="address" class="col-sm-4 col-xs-12">
+                  <span>Address:</span><br>
+                  Lorem ipsum dolor sit amet <br>
+                  Lorem ipsum dolor
+                  <p>We deliver in 3-4 miles of distance only!</p>
+                  <hr class="d-block d-sm-none">
+               </section>
+               <section id="testimonials" class="col-sm-4 col-xs-12">
+                  <span>Find us:</span><br>
+                  <!-- <div>find us</div> -->
+                  <img src="images/facebook.png" alt="">
+                  <img src="images/twitter.png" alt="">
+                  <hr class="d-block d-sm-none">
+               </section>
+            </div>
+            <div class="text-center">&copy; Copyright Lorem ipsum 2023</div>
+         </div>
+      </footer>
+   </body>
+   
+</html>
