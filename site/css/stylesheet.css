@@ -262,6 +262,7 @@ body{
     opacity: 1;
 }
 
+
 /* Footer */
 .panel-footer{
     background-color: rgb(253, 29, 29, 0.75);
@@ -384,25 +385,7 @@ body{
         height: 100px;
     }
 
-    .cat1{
-        background-image: url("../images/burgers-xs.jpg");
-    }
-    .cat2{
-        background-image: url("../images/indian-xs.jpg");
-    }
-    .cat3{
-        background-image: url("../images/chinese-xs.jpg");
-    }
-    .cat4{
-        background-image: url("../images/salad-xs.jpg");
-    }
-    .cat5{
-        background-image: url("../images/desserts-xs.jpg");
-    }
-    .cat6{
-        background-image: url("../images/beverages-xs.jpg");
-    }
-
+ 
     .categories-head h1{
         text-align: center;
         color: #fff;
@@ -479,7 +462,7 @@ body{
 .container hr{
     border: none;
     height: 3px;
-    background-color: rgb(253, 29, 29);
+    background-color: rgb(253, 29, 29, 0.75);
     opacity: 1;
     
 }
@@ -521,3 +504,74 @@ body{
     opacity: .8;
 }
 /* Menu categories page end */
+
+/* Category 01 start */
+.card {
+    position: relative;
+    text-align: center;
+    font-family:'Times New Roman', Times, sans-serif;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+
+    background-color:rgb(253, 29, 29, 0.75) ;
+    padding: 20px;
+    /* border: 1px solid #ccc;
+    border-radius: 5px;
+           */
+}
+.card:last-child{
+    margin-right: 0;        
+}
+.card h1 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card .price {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#categories1-page-tiles.row{
+    padding-left: 12px;
+    padding-right: 12px;
+    
+}
+.card button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.card button:hover {
+    background-color: #fff;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+  
+.card p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+  
+.card:hover{
+    box-shadow:0 1px 5px 1px #cccccc;
+
+}
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+    height: auto;
+}
+
+/* Category 01 end */
